@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        body{
+            background-color: skyblue;
+            width: 100%;
+        }
+
+        .container{
+            width: 30rem;
+            margin: 2rem auto;
+        }
+
+        .title{
+            text-align: center;
+        }
+
+        .form{
+            display: flex;
+            background-color: #fff;
+            margin-top: 1rem;
+            align-items: center;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        input{
+            background-color: transparent;
+            flex: 1;
+            padding: 0.7rem;
+            border: none;
+            outline: none;
+        }
+
+        .btn{
+            background-color: darkblue;
+            padding: 0.7rem;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+        }
+
+        .lists{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: transparent;
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="title">OOP Todo List</h1>
+        <form class="form" data-form>
+            <input type="text" placeholder="idk" data-input>
+            <button class="btn">Submit</button>
+        </form>
+
+        <div class="lists" data-lists></div>
+    </div>
+
+    <script src="toDoList.js"></script>
+
+</body>
+</html>
